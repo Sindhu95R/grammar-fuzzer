@@ -1,0 +1,17 @@
+version: '3'
+services:
+  fuzzer:
+    image: unix-grammar-fuzzer
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./
+    container_name: unix_grammar_fuzzer
+    restart: always
+    environment:
+      - TARGET_UTILITY=mv
+      - FUZZER_TYPE=GRAMMAR
+      - FUZZER_ITERATION=1000
+      - TIME_OUT=5
+      - RANDOM_FILE_CHAR_LENGTH=20000
+
+
