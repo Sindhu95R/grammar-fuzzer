@@ -1,0 +1,5 @@
+fuzzingbook==0.8.1
+prettytable==2.1.0
+wcwidth==0.2.5
+kittyfuzzer
+junit-xml
